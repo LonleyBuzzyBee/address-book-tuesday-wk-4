@@ -1,0 +1,11 @@
+#show-contact {
+  display: none;
+}
+
+li {
+	list-style: none;
+}
+
+.card {
+	margin: 0px;
+}

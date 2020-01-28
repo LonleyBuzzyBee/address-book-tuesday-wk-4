@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Demo</title>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	  <meta name="description" content="Demo project">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
-	</head>
-	<body>
-		<p>Let the game begin!</p>
-		<script type="text/javascript"></script>
+<head>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<title>Address Book</title>
+	<title></title>
+</head>
+<body>
+	<br>
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<h1>Address Book</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body">
+					<h2>Add a Contact:</h2>
+					<hr>
+					<form id="new-contact">
+						<div class="form-group">
+							<label for="new-first-name">First Name</label>
+							<input type="text"  class="form-control" id="new-first-name">
+						</div>
+						<div class="form-group">
+							<label for="new-last-name">Last Name</label>
+							<input type="text"  class="form-control" id="new-last-name">
+						</div>
+						<div class="form-group">
+							<label for="new-phone-number">Phone Number</label>
+							<input type="text"  class="form-control" id="new-phone-number">
+						</div>
+						<button type="submit" class="btn btn-info">Add</button>
+					</form>
+				</div>
+			</div>
+
+				<div class="col-md-6">
+				<div class="card card-body">
+				<h2>Contacts:</h2>
+				<hr>
+				<ul id="contacts">
+				</ul>
+				
+					<div id="show-contact">
+							<p>First Name: <span class="first-name"></span></p>
+							<p>Last Name: <span class="last-name"></span></p>
+							<p>Phone Number: <span class="phone-number"></span></p>
+							<div id="buttons">
+							</div>
+					</div>
+			</div>
+			</div>
+			</div>
+		</div>
 	</body>
-</html>
+	</html>
