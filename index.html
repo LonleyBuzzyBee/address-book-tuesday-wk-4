@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -8,6 +9,7 @@
 	<title>Address Book</title>
 	<title></title>
 </head>
+
 <body>
 	<br>
 	<div class="container-fluid">
@@ -22,38 +24,60 @@
 					<form id="new-contact">
 						<div class="form-group">
 							<label for="new-first-name">First Name</label>
-							<input type="text"  class="form-control" id="new-first-name">
+							<input type="text" class="form-control" id="new-first-name">
 						</div>
 						<div class="form-group">
 							<label for="new-last-name">Last Name</label>
-							<input type="text"  class="form-control" id="new-last-name">
+							<input type="text" class="form-control" id="new-last-name">
 						</div>
 						<div class="form-group">
 							<label for="new-phone-number">Phone Number</label>
-							<input type="text"  class="form-control" id="new-phone-number">
+							<input type="text" class="form-control" id="new-phone-number">
+						</div>
+						<div class="form-group">
+							<label for="new-email">Email</label>
+							<input type="text" class="form-control" id="new-email">
+						</div>
+						<div class="form-group">
+							<label for="new-home-address">Home Address</label>
+							<input type="text" class="form-control" id="new-home-address">
+						</div>
+						<div class="form-group">
+							<label for="new-work-address">Work Address</label>
+							<input type="text" class="form-control" id="new-work-address">
 						</div>
 						<button type="submit" class="btn btn-info">Add</button>
 					</form>
 				</div>
 			</div>
 
-				<div class="col-md-6">
+			<div class="col-md-6">
 				<div class="card card-body landing">
-				<h2>Contacts:</h2>
-				<hr>
-				<ul id="contacts">
-				</ul>
-				
-					<div id="show-contact">
-							<p>First Name: <span class="first-name"></span></p>
-							<p>Last Name: <span class="last-name"></span></p>
-							<p>Phone Number: <span class="phone-number"></span></p>
-							<div id="buttons">
-							</div>
-					</div>
-			</div>
-			</div>
+					<h2>Contacts:</h2>
+					<hr>
+					<ul id="contacts">
+					</ul>
+
+				</div>
 			</div>
 		</div>
-	</body>
-	</html>
+		<div class="row">
+			<div class="card card-body landing">
+				<h2>Contact Details</h2>
+				<hr>
+				<div id="show-contact">
+					<p>First Name: <span class="first-name"></span></p>
+					<p>Last Name: <span class="last-name"></span></p>
+					<p>Phone Number: <span class="phone-number"></span></p>
+					<p>Email: <span class="email"></span></p>
+					<p id="home-result">Home Address: <span class="home-address"></span></p>
+					<p id="work-result">Work Address: <span class="work-address"></span></p>
+					<div id="buttons">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
